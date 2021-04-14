@@ -63,25 +63,33 @@
 	}
 
 	&__body {
-		flex: 1 1 auto;
-				
+		flex: 1 1 auto;				
 	}
 
 	&__list {
 	display: flex;
 	justify-content: space-around;
+	padding-top: 13px; 
 	width: 450px;
 	margin: 0 auto;
+
 	li {
 		margin-right: 40px;
 		font-size: 16px;
         line-height: 19px;
 	}
+
 	li:last-child{
 		margin-right: 0;
 	}
+
+	a:hover{
+		text-decoration: underline;
+		
 	}
 
+	}
+	
 	&__link {
 	}
 }
@@ -92,27 +100,39 @@
 .icon-menu {
 }
 .profile {
-	display:inline-flex;
-	justify-content: space-between;
-	width: 233px;
+	padding-top: 13px; 
+	display:flex;
+	justify-content: space-around;
+	width: 250px;
 
 	&__sign-in {
+		display: inline-block;
+		white-space: nowrap;
 		font-weight: 500;
 		font-size: 16px;		
 	}
 
-	&__sign-up {
+	&__sign-up {	
+		display: inline-block;		
+		white-space: nowrap;
 		font-weight: 500;
-		font-size: 16px;
-		color: #F53855;
-		
-		.button-text{
-			padding: 13px 45px;
-			border: 1px solid #F53855;
-			border-radius: 50px;
-		} 
+		font-size: 16px;		
+	}
 
+	&__btn-text{
+		border: 1px solid transparent;
+		padding: 13px 45px;
+		margin-left: 10px;
+	}
+
+	&__btn-text:hover {						
+		border: 1px solid #F53855;
+		//padding:13px 44px;
+		border-radius: 50px;
+		color: #F53855;	
 	}
 }
+
+
 
 
