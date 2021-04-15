@@ -75,8 +75,8 @@
 
 	li {
 		margin-right: 40px;
-		font-size: 16px;
         line-height: 19px;
+		color: #4F5665;
 	}
 
 	li:last-child{
@@ -108,21 +108,18 @@
 	&__sign-in {
 		display: inline-block;
 		white-space: nowrap;
-		font-weight: 500;
-		font-size: 16px;		
+		font-weight: 500;		
 	}
 
 	&__sign-up {	
 		display: inline-block;		
 		white-space: nowrap;
-		font-weight: 500;
-		font-size: 16px;		
+		font-weight: 500;		
 	}
 
 	&__btn-text{
 		border: 1px solid transparent;
 		padding: 13px 45px;
-		margin-left: 10px;
 	}
 
 	&__btn-text:hover {						
