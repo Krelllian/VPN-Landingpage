@@ -1216,6 +1216,202 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 86px;
+}
+
+.plans__wrapper {
+  background: -o-linear-gradient(276deg, #fafafa 0%, #fefefe 100%);
+  background: linear-gradient(174deg, #fafafa 0%, #fefefe 100%);
+}
+
+.plans__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: #0B132A;
+}
+
+.plans__p {
+  width: 555px;
+  margin: 20px auto 0;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+}
+
+.plans__cards {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.plans__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 330px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+
+.card {
+  padding-top: 79px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.card:hover {
+  border-color: #fbb1b1;
+}
+
+.card__img {
+  width: 145px;
+  height: 165px;
+}
+
+.card__title {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #0B132A;
+}
+
+.card__ul {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+._no-webp .card li{
+  background: left no-repeat url("../img/icons/card__li.png"); }
+
+.card li {
+  padding-left: 44px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.card__price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+}
+
+.card__btn {
+  margin-top: 20px;
+  width: 177px;
+  height: 45px;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F53838;
+}
+
+.card__btn:hover {
+  background-color: #F53838;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 10px 7px rgba(245, 56, 56, 0.2);
+          box-shadow: 0px 5px 10px 7px rgba(245, 56, 56, 0.2);
+}
+
+.price__text_grey {
+  color: #4F5665;
+}
+
+.btn__text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.network {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.network__wrapper {
+  background: -o-linear-gradient(276deg, #fefefe 0%, white 100%);
+  background: linear-gradient(174deg, #fefefe 0%, white 100%);
+}
+
+.network__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.network__title {
+  width: 383px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: #0B132A;
+}
+
+.network__p {
+  width: 555px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+}
+
+.network__text_500 {
+  font-weight: 500;
+}
+
+.network__map {
+  margin: 155px 40px 0;
+}
+
+.network__sponsors {
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 991.98px) {
@@ -1263,3 +1459,5 @@ a {
 }
 
 ._webp .features li{ background: no-repeat left url(../img/icons/list-icon-1.webp); }
+
+._webp .card li{ background: left no-repeat url(../img/icons/card__li.webp); }
