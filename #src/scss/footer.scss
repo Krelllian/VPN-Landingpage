@@ -1,4 +1,63 @@
-footer{}
+
+
+.footer {
+
+    background-color: #F8F8F8;
+    padding-top: 170px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social {
+        width: 340px;
+    }
+
+    &__logo {
+    }
+
+    &__product {
+    }
+
+    &__ul {
+    }
+
+    &__ul-title {
+    }
+
+    &__engage {
+    }
+
+    &__earn-money {
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    &__p {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #4F5665;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    &__icons {
+        display: flex;
+    }
+
+    &__facebook-icon {
+    }
+}
+.copyright {
+}
+
 //====================================================================================================
 
 //====================================================================================================
