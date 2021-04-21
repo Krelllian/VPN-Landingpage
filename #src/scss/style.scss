@@ -21,13 +21,7 @@ $fontFamily: "Rubik";
 //</ШРИФТЫ>=======================================================================================================
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
-$minWidth: 320px;
-$maxWidth: 1920;
-$maxWidthContainer: 1140;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -56,23 +50,25 @@ body {
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 ._container {
-	max-width: $maxWidthContainer + px;
+	max-width: 1170px;
+	padding: 0 15px;
 	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-@import "forms";
+//@import "forms";
+.btn {
+	display: inline-flex;
+	padding: 0px 0px;
+	@media (min-width: 992px) {
+		&:hover {
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
 @import "ui";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
@@ -106,6 +102,8 @@ a {
 	margin-bottom: 22px;
 	background-color: #F53838;
 	border-radius: 10px;
+	transition: all 0.3s;
+
 
 	&:hover {
 		background-color: darken(#F53838, 5%);
@@ -402,6 +400,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		color: #F53838;
+		transition: all 0.3s;
 	}
 
 	&__btn:hover {
@@ -637,12 +636,15 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-	
 	position: static;
 	width: 61px;
 	height: 61px;
 	top: 280px;
 	transform: translate(0, -50px);
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .swiper-button-prev::after,
@@ -652,7 +654,7 @@ a {
 }
 
 .swiper-button-prev {
-	//padding-left: 80%;
+
 }
 .swiper-button-next {
 	margin-left: 30px;

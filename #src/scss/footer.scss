@@ -4,6 +4,7 @@
 
     background-color: #F8F8F8;
     padding-top: 170px;
+    padding-bottom: 100px;
 
     &__content {
         display: flex;
@@ -15,15 +16,27 @@
     }
 
     &__logo {
+
     }
 
     &__product {
     }
 
     &__ul {
+
+        li {
+            font-size: 16px;
+            line-height: 30px;          
+            color: #4F5665; 
+        }
     }
 
     &__ul-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #0B132A;
+        margin-bottom: 15px;
     }
 
     &__engage {
@@ -50,14 +63,33 @@
 
     &__icons {
         display: flex;
+        width: 33px;
+        height: 33px;
+        margin-top: 30px;
     }
-
-    &__facebook-icon {
+    &__icon-wrapper {
+        margin-right: 20px;
     }
 }
 .copyright {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+    span {
+        font-weight: 500;
+    }
 }
 
+.icon {
+    width: 33px;
+    height: 33px;
+    fill: black;
+    transition: fill 0.3s;
+    &:hover {
+        fill: #F53838;
+    }
+}
 //====================================================================================================
 
 //====================================================================================================
