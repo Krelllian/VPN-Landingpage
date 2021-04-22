@@ -34,6 +34,10 @@ body {
 		overflow: hidden;
 	}
 }
+
+._hidden {
+display: none;
+}
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 //<ОБОЛОЧКА>===========================================================================================================
@@ -164,13 +168,19 @@ a {
 	&__row {
 		display: flex;
 		flex-basis: 50%;
+		@media(max-width: 1070px){
+			flex-wrap: wrap;
+			//flex-basis: 100%;
+		}
 	}
 
 	&__main-img {
+		//max-width: 100%;
+		//object-fit: cover;
 		position: relative;
 		left: 67px;
-		width: 611px;
-		height: 382px;
+		//width: 611px;
+		//height: 382px;
 	}
 
 	&__stats-row {
@@ -182,12 +192,13 @@ a {
 	}
 
     &__stats {
+		display: flex;
 		flex-basis: 33.333%;
 		height: 200px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		text-align: left;
+		text-align: center;
 	}
 }
  
@@ -241,6 +252,15 @@ a {
 
 }
 
+.stats__number {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stats__p {
+	margin-left: auto;
+	margin-right: auto;
+}
 //</ABOUT>===============================
 
 //<FEATURES>=============================
@@ -707,3 +727,83 @@ a {
 
 }
 //</subscribe>
+
+
+//<@media>
+
+@media(max-width: 1070px){
+
+	.about__get-started {
+		text-align: center;		
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+
+	.about__title {
+		padding-bottom: 40px;
+	}
+
+	.about__p {
+		padding-bottom: 40px;
+	}
+
+	.about__main-img {
+		width: 100%;
+		text-align: center;
+		left: 0;
+		
+	}
+	.about__stats-row{
+		justify-content: center;
+	}
+
+	.about__stats {
+		display: flex;
+		justify-items: center;
+		//flex-basis: 50%;
+		//text-align: center;
+		//margin-right: auto;
+	}
+
+
+
+	.about__stats::after{
+		display: none;
+	}
+
+}
+
+@media(max-width: 750px) {
+	.about {
+		margin-top: 15px;
+	}
+	.about__get-started {	
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.about__title {
+		font-size: 30px;
+		line-height: 40px;
+		padding-bottom: 20px;
+	}
+	.about__p {
+		padding-bottom: 20px;
+	}
+	.about__main-img {
+
+		img {
+			max-width: 100%;
+		}
+	}
+	.about__stats {
+
+		flex-basis: 100%;
+		height: 100px;
+		//text-align: center;
+		//margin-right: auto;
+	}
+
+	.about__stats-row {
+		margin-top: 0;
+	}
+}

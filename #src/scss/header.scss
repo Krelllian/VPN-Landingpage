@@ -78,7 +78,6 @@
 		flex: 1 1 auto;	
 
 		@media (max-width: 1050px) {
-			display: none;
 			position: fixed;
 			top: 0;
 			left: -100%;
@@ -89,13 +88,27 @@
 			transition: left 0.3s ease 0s;
 			overflow: auto;
 			z-index: 4;
+
+			&._active {
+				left: 0;
+			}
 		}	
 		
-		&._active {
+		//&._active {
+		//	display: block;
+		//	left: 0;
+		//}
+	}
+
+	&__burger-btn {
+		@media(max-width: 1050px){
 			display: block;
-			left: 0;
+			padding-bottom: 20px;
+			
 		}
 	}
+
+
 
 	&__list {
 	display: flex;
@@ -104,30 +117,71 @@
 	width: 450px;
 	margin: 0 auto;
 
+	@media (max-width: 1050px) {
+		margin-top: 40px;
+		flex-direction: column;
+	}
+
+	@media (max-width: 520px) {
+		width:auto;
+	}
+
 	li {
 		margin-right: 40px;
         line-height: 19px;
 		color: #4F5665;
+
+		@media (max-width: 1050px) {
+			margin: 0;
+			font-size: 50px;
+			line-height: 70px;
+			text-align: center;
+		}
+
+		@media (max-width: 520px){
+			font-size: 30px;
+			line-height: 40px;
+		}
 	}
+
 
 	li:last-child{
 		margin-right: 0;
 	}
 
-	a:hover{
-		text-decoration: underline;
-		
+	a.menu__link:hover{
+		transition: all 0.3s;	
+		color: lighten(#F53855, 5%);
 	}
 
 	}
 	
+	@media (max-width: 1050px) {
+	&__profile-text{
+
+		color: #F53855;
+	}
+
+	&__profile-text:hover{
+		transition: all 0.3s;
+		color: darken(#F53855, 15%);
+	}
+
+	}
+
 	&__link {
 	}
+
 }
+.logo{
+z-index: 10;
+}
+
 .logo-img {
 	width: 150px;
 	height: 60px;
 }
+
 .icon-menu {
 }
 .profile {
@@ -136,7 +190,7 @@
 	justify-content: space-around;
 	width: 250px;
 	@media (max-width: 1050px) {
-		margin-right: 75px;
+		display: none;
 	}
 
 	&__sign-in {

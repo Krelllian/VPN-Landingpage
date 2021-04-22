@@ -1,18 +1,7 @@
 function email_test(input) {
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
-//<burger>
 
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-    iconMenu.addEventListener("click", function (e) {
-        document.body.classList.toggle('_lock');
-        iconMenu.classList.toggle('_active');
-        menuBody.classList.toggle('_active');
-    });
-}
-//</burger>
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -661,7 +650,7 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
-//let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
+////let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
 	for (let index = 0; index < forms.length; index++) {
