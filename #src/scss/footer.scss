@@ -44,6 +44,10 @@
 
     &__earn-money {
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .social {
@@ -63,8 +67,6 @@
 
     &__icons {
         display: flex;
-        width: 33px;
-        height: 33px;
         margin-top: 30px;
     }
     &__icon-wrapper {
@@ -84,8 +86,10 @@
 .icon {
     width: 33px;
     height: 33px;
+    margin-left: 10px;
     fill: black;
     transition: fill 0.3s;
+    
     &:hover {
         fill: #F53838;
     }
@@ -94,3 +98,40 @@
 
 //====================================================================================================
 
+@media(max-width: 1070px){
+    .footer {
+		padding-top: 0px;
+
+	}
+
+	.footer__content {
+        //display: grid;
+        //grid-template-columns: 1fr 1fr;
+	}
+
+    .footer__column {
+        margin-top: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+
+    .footer__social {
+        order: 20;
+    }
+
+}
+
+@media(max-width: 520px){
+
+    .footer {
+		padding-bottom: 10px;
+
+	}
+
+    .footer__column {
+        flex-basis: 100%;
+    }
+
+}

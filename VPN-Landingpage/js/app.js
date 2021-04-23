@@ -28,6 +28,30 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 
+    autoHeight: true,
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1.01,
+            spaceBetween: 15,
+
+        },
+        // when window width is >= 480px
+        885: {
+            slidesPerView: 2.01,
+            spaceBetween: 30,
+
+        },
+        // when window width is >= 640px
+        1070: {
+            slidesPerView: 2.4,
+            spaceBetween: 40,
+
+        }
+    }
+
+
 });
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
